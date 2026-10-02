@@ -1,0 +1,47 @@
+{
+  "retrieved_at_utc": "2026-10-02T09:11:05.161058+00:00",
+  "sources": {
+    "qwen3_8b": {
+      "kind": "model",
+      "id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "metadata_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+      "license": "apache-2.0"
+    },
+    "qwen25_coder_7b": {
+      "kind": "model",
+      "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+      "metadata_url": "https://huggingface.co/api/models/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "license": "apache-2.0"
+    },
+    "qwen35_9b": {
+      "kind": "model",
+      "id": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "metadata_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B",
+      "license": "apache-2.0"
+    },
+    "kernelbench": {
+      "kind": "repository",
+      "id": "ScalingIntelligence/KernelBench",
+      "revision": "423217d9fda91e0c2d67e4a43bf62f96f6d104f1",
+      "metadata_url": "https://api.github.com/repos/ScalingIntelligence/KernelBench/commits/main",
+      "license": "NOASSERTION"
+    },
+    "flashinfer_bench": {
+      "kind": "repository",
+      "id": "flashinfer-ai/flashinfer-bench",
+      "revision": "15618a67e8d7b7f49ca61b5ba3b9f26a876d0bee",
+      "metadata_url": "https://api.github.com/repos/flashinfer-ai/flashinfer-bench/commits/main",
+      "license": "Apache-2.0"
+    },
+    "fla": {
+      "kind": "repository",
+      "id": "fla-org/flash-linear-attention",
+      "revision": "9f38d24980c46d46bd38614e743cdacd21906578",
+      "metadata_url": "https://api.github.com/repos/fla-org/flash-linear-attention/commits/main",
+      "license": "MIT"
+    }
+  }
+}

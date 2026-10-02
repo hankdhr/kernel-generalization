@@ -1,0 +1,5 @@
+entry_id,date,stage,status,description,artifact,spend_cny
+prep-001,2026-10-02,provenance,completed,Public model and repository revisions resolved,configs/sources.lock.json,0
+prep-002,2026-10-02,protocol,prepared,Research hypothesis and experiment matrix written,docs/research-plan.md,0
+prep-003,2026-10-02,cpu_checks,passed,13 local tests passed; no GPU experiment,docs/verification.md,0
+gpu-001,2026-10-02,E00,pending,Await hardware and budget; no GPU result,,0

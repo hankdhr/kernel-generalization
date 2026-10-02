@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "proposal_not_run",
+  "primary_model_key": "qwen3_8b",
+  "model_control_key": "qwen25_coder_7b",
+  "later_model_key": "qwen35_9b",
+  "primary_language": "CUDA C++",
+  "primary_hardware": "one H800; exact SKU and configuration pending",
+  "generation": {
+    "enable_thinking": false,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "max_new_tokens": 8192,
+    "seeds": [101, 202, 303],
+    "note": "Qwen3 non-thinking configuration. A reasoning-mode comparison is a separate experiment."
+  },
+  "evaluation": {
+    "candidate_budgets": [1, 4, 8],
+    "total_generated_token_budget_per_task": 32768,
+    "wall_seconds_per_task": 900,
+    "fast_thresholds": [1.0, 1.05, 1.2],
+    "primary_fast_threshold": 1.05,
+    "bootstrap_unit": "task graph, clustered across shapes and seeds",
+    "baseline": "faster correct implementation of eager and torch.compile; freeze configuration before final test"
+  },
+  "training": {
+    "implementation_status": "not_implemented",
+    "initial_method": "LoRA SFT; assess memory and correctness before choosing rank and batch size",
+    "comparison": "best-code SFT versus measured transformation-pair SFT",
+    "match": ["initial checkpoint", "training tokens", "optimizer steps", "training compute", "evaluation budget"]
+  },
+  "spending": {"approved_total_cny": null, "paid_jobs_enabled": false}
+}

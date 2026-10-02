@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kernel-generalization"
+version = "0.1.0"
+description = "Open experiments on learning to implement and optimize CUDA kernels"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = []
+
+[project.scripts]
+kg = "kernel_generalization.core:main"
+
+[tool.setuptools.packages.find]
+include = ["kernel_generalization*"]
